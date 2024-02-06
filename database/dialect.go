@@ -16,6 +16,7 @@ const (
 	DialectClickHouse Dialect = "clickhouse"
 	DialectMSSQL      Dialect = "mssql"
 	DialectMySQL      Dialect = "mysql"
+	DialectMemSQL     Dialect = "memsql"
 	DialectPostgres   Dialect = "postgres"
 	DialectRedshift   Dialect = "redshift"
 	DialectSQLite3    Dialect = "sqlite3"
@@ -37,6 +38,7 @@ func NewStore(dialect Dialect, tablename string) (Store, error) {
 		DialectClickHouse: &dialectquery.Clickhouse{},
 		DialectMSSQL:      &dialectquery.Sqlserver{},
 		DialectMySQL:      &dialectquery.Mysql{},
+		DialectMemSQL:     &dialectquery.Memsql{},
 		DialectPostgres:   &dialectquery.Postgres{},
 		DialectRedshift:   &dialectquery.Redshift{},
 		DialectSQLite3:    &dialectquery.Sqlite3{},
