@@ -36,6 +36,8 @@ func SetDialect(s string) error {
 		d = dialect.Postgres
 	case "mysql":
 		d = dialect.Mysql
+	case "memsql":
+		d = dialect.Memsql
 	case "sqlite3", "sqlite":
 		d = dialect.Sqlite3
 	case "mssql", "azuresql", "sqlserver":

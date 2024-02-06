@@ -6,6 +6,7 @@ type Dialect string
 const (
 	Postgres   Dialect = "postgres"
 	Mysql      Dialect = "mysql"
+	Memsql     Dialect = "memsql"
 	Sqlite3    Dialect = "sqlite3"
 	Sqlserver  Dialect = "sqlserver"
 	Redshift   Dialect = "redshift"
