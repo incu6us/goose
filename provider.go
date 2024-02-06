@@ -12,8 +12,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pressly/goose/v3/database"
-	"github.com/pressly/goose/v3/internal/sqlparser"
+	"github.com/incu6us/goose/v3/database"
+	"github.com/incu6us/goose/v3/internal/sqlparser"
 	"go.uber.org/multierr"
 )
 

@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pressly/goose/v3/database"
-	"github.com/pressly/goose/v3/internal/sqlparser"
+	"github.com/incu6us/goose/v3/database"
+	"github.com/incu6us/goose/v3/internal/sqlparser"
 	"go.uber.org/multierr"
 )
 
@@ -174,8 +174,8 @@ func (p *Provider) runMigrations(
 	// feat(mf): this is where we can (optionally) group multiple migrations to be run in a single
 	// transaction. The default is to apply each migration sequentially on its own. See the
 	// following issues for more details:
-	//  - https://github.com/pressly/goose/issues/485
-	//  - https://github.com/pressly/goose/issues/222
+	//  - https://github.com/incu6us/goose/issues/485
+	//  - https://github.com/incu6us/goose/issues/222
 	//
 	// Be careful, we can't use a single transaction for all migrations because some may be marked
 	// as not using a transaction.
@@ -345,7 +345,7 @@ func (p *Provider) ensureVersionTable(ctx context.Context, conn *sql.Conn) (retE
 		}
 	} else {
 		// feat(mf): this is where we can check if the version table exists instead of trying to fetch
-		// from a table that may not exist. https://github.com/pressly/goose/issues/461
+		// from a table that may not exist. https://github.com/incu6us/goose/issues/461
 		res, err := p.store.GetMigration(ctx, conn, 0)
 		if err == nil && res != nil {
 			return nil

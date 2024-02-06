@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/incu6us/goose/v3/database"
+	"github.com/incu6us/goose/v3/internal/check"
+	"github.com/incu6us/goose/v3/internal/testdb"
 	"github.com/jackc/pgx/v5/pgconn"
-	"github.com/pressly/goose/v3/database"
-	"github.com/pressly/goose/v3/internal/check"
-	"github.com/pressly/goose/v3/internal/testdb"
 	"go.uber.org/multierr"
 	"modernc.org/sqlite"
 )

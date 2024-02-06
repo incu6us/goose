@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/pressly/goose/v3"
-	"github.com/pressly/goose/v3/database"
+	"github.com/incu6us/goose/v3"
+	"github.com/incu6us/goose/v3/database"
 )
 
 func init() {

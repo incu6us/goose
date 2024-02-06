@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pressly/goose/v3/internal/check"
-	"github.com/pressly/goose/v3/internal/testdb"
-	"github.com/pressly/goose/v3/lock"
+	"github.com/incu6us/goose/v3/internal/check"
+	"github.com/incu6us/goose/v3/internal/testdb"
+	"github.com/incu6us/goose/v3/lock"
 )
 
 func TestPostgresSessionLocker(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/pressly/goose/v3/internal/check"
+	"github.com/incu6us/goose/v3/internal/check"
 )
 
 func TestNewGoMigration(t *testing.T) {

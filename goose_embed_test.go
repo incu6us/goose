@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pressly/goose/v3"
-	"github.com/pressly/goose/v3/internal/check"
+	"github.com/incu6us/goose/v3"
+	"github.com/incu6us/goose/v3/internal/check"
 	_ "modernc.org/sqlite"
 )
 

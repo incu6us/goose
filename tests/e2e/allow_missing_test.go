@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/pressly/goose/v3"
-	"github.com/pressly/goose/v3/internal/check"
+	"github.com/incu6us/goose/v3"
+	"github.com/incu6us/goose/v3/internal/check"
 )
 
 func TestNotAllowMissing(t *testing.T) {
@@ -316,7 +316,7 @@ func TestMigrateAllowMissingDown(t *testing.T) {
 }
 
 func TestWithWithoutAllowMissing(t *testing.T) {
-	// Test for https://github.com/pressly/goose/issues/521
+	// Test for https://github.com/incu6us/goose/issues/521
 
 	// Apply 1,2,4,3 then run up without allow missing. If the next requested migration is
 	// 4 then it should not raise an error because it has already been applied.
@@ -339,8 +339,8 @@ func TestWithWithoutAllowMissing(t *testing.T) {
 	// Rollback migration 3 because it is the last applied migration.
 	// But, we want to change this behaviour to apply rollback migration 4.
 	// See these issues for more details:
-	// https://github.com/pressly/goose/issues/523
-	// https://github.com/pressly/goose/issues/402
+	// https://github.com/incu6us/goose/issues/523
+	// https://github.com/incu6us/goose/issues/402
 	//
 	// Adding this test to ensure the behaviour is updated and captured in a test.
 	err = goose.Down(db, migrationsDir)
